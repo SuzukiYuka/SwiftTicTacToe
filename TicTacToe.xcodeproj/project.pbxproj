@@ -13,6 +13,7 @@
 		E2FEB77A1A8743CE008CE8AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FEB7791A8743CE008CE8AA /* Images.xcassets */; };
 		E2FEB77D1A8743CE008CE8AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2FEB77B1A8743CE008CE8AA /* LaunchScreen.xib */; };
 		E2FEB7891A8743CE008CE8AA /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEB7881A8743CE008CE8AA /* TicTacToeTests.swift */; };
+		E2FEB7931A88261F008CE8AA /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FEB7921A88261F008CE8AA /* grid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E2FEB7821A8743CE008CE8AA /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FEB7871A8743CE008CE8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2FEB7881A8743CE008CE8AA /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
+		E2FEB7921A88261F008CE8AA /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		E2FEB76F1A8743CE008CE8AA /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				E2FEB7921A88261F008CE8AA /* grid.png */,
 				E2FEB7721A8743CE008CE8AA /* AppDelegate.swift */,
 				E2FEB7741A8743CE008CE8AA /* ViewController.swift */,
 				E2FEB7761A8743CE008CE8AA /* Main.storyboard */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2FEB7781A8743CE008CE8AA /* Main.storyboard in Resources */,
+				E2FEB7931A88261F008CE8AA /* grid.png in Resources */,
 				E2FEB77D1A8743CE008CE8AA /* LaunchScreen.xib in Resources */,
 				E2FEB77A1A8743CE008CE8AA /* Images.xcassets in Resources */,
 			);
