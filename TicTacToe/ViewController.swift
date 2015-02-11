@@ -33,6 +33,60 @@ class ViewController: UIViewController {
     @IBOutlet var resetBtn : UIButton!
     
     @IBOutlet var userMsgLabel : UILabel!
+    
+    var plays = Dictionary<Int,Int>()
+    var done = false
+    var aiDeciding = false
+    
+    @IBAction func btClick(sender: UIButton) {
+        userMsgLabel.hidden = true
+        if plays[sender.tag] == nil && aiDeciding == false && done == false {
+            setLabelForSpot(sender.tag, player:1)
+        }
+        checkForWin()
+        aiTurn()
+    }
+    
+    func setLabelForSpot(spot:Int,player:Int) {
+        var playerMark = player == 1 ? "X" : "O"
+        plays[spot] = player
+        
+        switch spot {
+        case 1:
+            ticTacLabel1.text = playerMark
+        case 2:
+            ticTacLabel2.text = playerMark
+        case 3:
+            ticTacLabel3.text = playerMark
+        case 4:
+            ticTacLabel4.text = playerMark
+        case 5:
+            ticTacLabel5.text = playerMark
+        case 6:
+            ticTacLabel6.text = playerMark
+        case 7:
+            ticTacLabel7.text = playerMark
+        case 8:
+            ticTacLabel8.text = playerMark
+        case 9:
+            ticTacLabel9.text = playerMark
+        default :
+            ticTacLabel5.text = playerMark
+            
+        }
+    }
+    
+    func checkForWin() {
+        var whoWon = ["I":0,"you":1]
+        for(key,value) in whoWon {
+            
+        }
+        
+    }
+    
+    func aiTurn() {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
