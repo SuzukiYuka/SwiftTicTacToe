@@ -146,6 +146,7 @@ class ViewController: UIViewController {
     }
     
     
+    //FindFuncs
     func checkBottom(#value:Int) -> (location:String, pattern:String)? {
         return ("bottom",checkFor(value, inList: [7,8,9]))
     }
@@ -184,6 +185,7 @@ class ViewController: UIViewController {
         return conclusion
     }
     
+    //列(行)に同じのが二つあるか
     func rowCheck(#value:Int) -> (location:String, pattern:String)? {
         var accseptableFinds = ["110","101","011"]
         var findFuncs = [checkTop,checkBottom,checkLeft,checkRight,checkMiddleAcross,checkMiddledown,checkDiagLeftRight,checkDiagRightLeft]
@@ -197,7 +199,7 @@ class ViewController: UIViewController {
     }
     
     func isOccupied(spot:Int) -> Bool {
-        return Bool(plays[spot]!)
+        return plays[spot] != nil
     }
     
     //AIの動き
@@ -269,6 +271,7 @@ class ViewController: UIViewController {
         
     }
     
+    //どこにおくか
     func whereToPlay(location:String, pattern:String) -> Int {
         var leftPattern = "011"
         var rightPattern = "110"
